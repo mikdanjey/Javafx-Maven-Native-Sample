@@ -53,7 +53,7 @@
         <app.url>http://downloads.mikdanjey.com/testapp</app.url>
 
         <!-- Optional scp target for application artifacts hosted at the above url -->
-        <app.deploy.target>mikdatds@downloads.mikdanjey.com:public_html/downloads/testapp</app.deploy.target>
+        <app.deploy.target>mikdanjey@downloads.mikdanjey.com:public_html/downloads/testapp</app.deploy.target>
 
         <!-- The app and launcher will be assembled in this folder -->
         <app.dir>${project.build.directory}/app</app.dir>
