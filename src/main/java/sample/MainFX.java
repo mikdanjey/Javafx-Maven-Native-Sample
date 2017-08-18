@@ -14,7 +14,7 @@ public class MainFX extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/user_form.fxml"));
         primaryStage.setTitle("Test App");
         primaryStage.setScene(new Scene(root));
         primaryStage.setMaximized(false);
