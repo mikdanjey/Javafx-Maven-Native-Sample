@@ -35,6 +35,14 @@ with FXLauncher, including native installers. ControlsFX is included just to hav
             <artifactId>hibernate-core</artifactId>
             <version>5.2.10.Final</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+
     </dependencies>
 
     <!-- Everything you normally need to configure is done in this section -->
