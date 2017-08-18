@@ -4,13 +4,22 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "users", schema = "mikdatds_test", catalog = "")
+@Table(name = "users")
 public class UsersEntity {
     private int id;
     private String firstname;
     private String lastname;
     private String email;
     private Timestamp creationDate;
+
+    public UsersEntity(String firstname, String lastname, String email) {
+        this.setFirstname(firstname);
+        this.setLastname(lastname);
+        this.setEmail(email);
+    }
+
+    public UsersEntity() {
+    }
 
     @Id
     @Column(name = "id", nullable = false)
