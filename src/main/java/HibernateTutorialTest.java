@@ -24,8 +24,8 @@ public class HibernateTutorialTest {
         factory = config.buildSessionFactory(serviceRegistry);
 
         HibernateTutorialTest hbTest = new HibernateTutorialTest();
-        hbTest.insertUser("Mark", "Johnson", "mark.johnson@gmail.com");
-        hbTest.insertUser("Samuel", "Johnson", "sam.johnson@gmail.com");
+//        hbTest.insertUser("Mark","Johnson","mark.johnson@gmail.com");
+//        hbTest.insertUser("Samuel","Johnson","sam.johnson@gmail.com");
 
         List<UsersEntity> users = hbTest.listUsers();
         for (UsersEntity u : users) {
@@ -61,7 +61,7 @@ public class HibernateTutorialTest {
 
     private List listUsers() {
         Session sesn = factory.openSession();
-        Transaction tx = null;
+        Transaction tx;
         List users = new ArrayList();
         try {
             tx = sesn.beginTransaction();
